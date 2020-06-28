@@ -16,7 +16,7 @@
   }
 }
 
-@media screen  and (min-width: 480px) and (max-width: 768px){
+@media screen  and (min-width: 480px) and (max-width: 640px){
   .sub-header .MuiTypography-colorPrimary{
     padding: 0px 0px !important;
     width: 100%;
