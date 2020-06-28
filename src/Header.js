@@ -93,7 +93,7 @@ export default function Header() {
             <Container maxWidth="lg">
             <Grid item xs={12}>
             <Typography className={classes.subHeader}>
-                <Link href="#" onClick={preventDefault}>
+                <Link href="/trending">
                     Trending
                 </Link>
                 <Link href="#" onClick={preventDefault}>
@@ -120,7 +120,9 @@ export default function Header() {
                 <Link href="#" onClick={preventDefault}>
                     People
                 </Link>
+                <Link href="/channel">
                 <Button variant="contained">Explore</Button>
+                </Link>
             </Typography>
             </Grid>
             </Container>

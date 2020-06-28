@@ -14,11 +14,15 @@ import Nature from './nature.jpg';
 import EventIcon from '@material-ui/icons/Event';
 import SmokingRoomsIcon from '@material-ui/icons/SmokingRooms';
 import { useState, useEffect } from 'react';
+import Link from '@material-ui/core/Link';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1,
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around',
+        overflow: 'hidden',
     },
     paper: {
         padding: theme.spacing(2),
@@ -47,6 +51,7 @@ export default function Trending() {
         <div className="trendings">
             <div className={classes.root} id="trend-content">
                 <Container maxWidth="lg">
+                <Link href="/channel">
                     <Grid container>
                         <Grid item xs={6} sm={6}>
                             <img src={Nature} alt="Nature" />
@@ -80,6 +85,7 @@ export default function Trending() {
                             </Paper>
                         </Grid>
                     </Grid>
+                    </Link>
                 </Container>
                 <Container maxWidth="lg">
                     <Grid container spacing={2}>
