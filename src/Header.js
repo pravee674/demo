@@ -46,7 +46,7 @@ export default function Header() {
              <Container maxWidth="lg">
                     <Grid container>
             <AppBar position="fixed">
-                <Grid item xs={12}>
+                <Grid item xs={12} sm={12}>
                     <Toolbar>
                         <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                             <ApartmentIcon />
@@ -91,7 +91,7 @@ export default function Header() {
             </Container>
             <div className="sub-header">
             <Container maxWidth="lg">
-            <Grid item xs={12}>
+            <Grid item xs={12} sm={12}>
             <Typography className={classes.subHeader}>
                 <Link href="/trending">
                     Trending
