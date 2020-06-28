@@ -16,22 +16,29 @@
   }
 }
 
-@media screen  and (min-width: 480px) and (max-width: 640px){
+@media screen  and (min-width: 360px) and (max-width: 640px){
   .sub-header .MuiTypography-colorPrimary{
     padding: 0px 0px !important;
     width: 100%;
     float: left;
   }
+  .MuiAppBar-positionFixed{
+    position: relative !important;
+  }
   .sub-header{
-    margin-top: 30%;
+    margin-top: -17%;
   }
   .trendings .MuiGrid-grid-sm-4 img {
-    width: 100px !important;
+    width: 67px !important;
     height: 50px !important;
     margin-bottom: 10px !important;
   }
   #left-image h3{
-    font-size:18px !important;
+    font-size:12px !important;
+  }
+  .trendings img {
+    width: 150px !important;
+    height: 330px;
   }
 }
 
