@@ -100,62 +100,18 @@ export default function Trending() {
                                             <ListItemIcon>
                                                 <SmokingRoomsIcon />
                                             </ListItemIcon>
-                                            <ListItemText primary="CNN" />
+                                            <ListItemText primary={item.icontitle} />
                                         </ListItem>
                                     </List>
                                     <ListItem button>
                                         <Button size="small" className="nature">
-                                            Nature
+                                            {item.link}
                                         </Button>
                                     </ListItem>
                                 </Toolbar>
                             </Paper>
                         </Grid>
                         )}
-                        {/* <Grid item xs={4} sm={4}>
-                            <Paper className={classes.paper} id="left-image">
-                            <img src={Phone} alt="Nature" />
-                            <h3>Now battery for smartphones</h3>
-                                <h3>can now charge in a minute</h3>
-                                <Toolbar>
-                                    <List component="nav" className={classes.root} aria-label="contacts">
-                                        <ListItem button className="gardian">
-                                            <ListItemIcon>
-                                                <SmokingRoomsIcon />
-                                            </ListItemIcon>
-                                            <ListItemText primary="Return" />
-                                        </ListItem>
-                                    </List>
-                                    <ListItem button>
-                                        <Button size="small" className="nature">
-                                            Nature
-                                        </Button>
-                                    </ListItem>
-                                </Toolbar>
-                            </Paper>
-                        </Grid>
-                        <Grid item xs={4} sm={4}>
-                            <Paper className={classes.paper} id="left-image">
-                            <img src={Leaf} alt="Nature" />
-                            <h3>The best Tropical plants you</h3>
-                                <h3>can grow indoors</h3>
-                                <Toolbar>
-                                    <List component="nav" className={classes.root} aria-label="contacts">
-                                        <ListItem button className="return">
-                                            <ListItemIcon>
-                                                <SmokingRoomsIcon />
-                                            </ListItemIcon>
-                                            <ListItemText primary="CNN" />
-                                        </ListItem>
-                                    </List>
-                                    <ListItem button>
-                                        <Button size="small" className="nature">
-                                            Nature
-                                        </Button>
-                                    </ListItem>
-                                </Toolbar>
-                            </Paper>
-                        </Grid> */}
                     </Grid>
                 </Container>
             </div>

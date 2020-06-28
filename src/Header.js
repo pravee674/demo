@@ -48,9 +48,11 @@ export default function Header() {
             <AppBar position="fixed">
                 <Grid item xs={12} sm={12}>
                     <Toolbar>
+                    <Link href="/trending">
                         <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                             <ApartmentIcon />
                         </IconButton>
+                        </Link>
                         <List component="nav" className={classes.root} aria-label="contacts">
                             <ListItem button>
                                 <ListItemIcon>

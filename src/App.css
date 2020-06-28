@@ -171,14 +171,14 @@ margin-bottom: 2%;
     color: #6648cd;
     border-bottom: 3px solid #6648cd;
 }
-.sub-header .MuiTypography-colorPrimary:first-child{
+/* .sub-header .MuiTypography-colorPrimary:first-child{
   color: #6648cd;
   border-bottom: 3px solid #6648cd;
-}
-.sub-header .MuiLink-underlineHover:nth-child(1){
+} */
+/* .sub-header .MuiLink-underlineHover:nth-child(1){
   color: #6648cd;
   border-bottom: 3px solid #6648cd;
-}
+} */
 .MuiAppBar-colorPrimary{
   background-color: #6648cd !important;
 }
