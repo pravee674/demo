@@ -24,6 +24,10 @@
   width: 620px;
   height:330px;
 }
+.MuiGrid-grid-sm-12 img {
+  width: 1220px;
+  height: 400px;
+}
 .trendings .MuiGrid-grid-sm-4 img {
   width: 380px;
   height: 150px;
