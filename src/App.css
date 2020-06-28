@@ -1,0 +1,178 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#trend-content {
+  margin-top:2.5%;
+}
+
+.MuiListItemIcon-root{
+  min-width: 32px !important;
+}
+.trendings img {
+  width: 620px;
+  height:330px;
+}
+.trendings .MuiGrid-grid-sm-4 img {
+  width: 380px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.trendings .MuiGrid-grid-sm-4 h3{
+  font-size: 18px !important;
+}
+.gardian  .MuiListItemIcon-root {
+  color: #6648cd;
+}
+.gardian .MuiTypography-displayBlock {
+  color: #6648cd;
+  font-weight: bold;
+}
+.return  .MuiListItemIcon-root {
+  color: red;
+}
+.return .MuiTypography-displayBlock {
+  color: red;
+  font-weight: bold;
+}
+.trendings .MuiToolbar-gutters {
+  margin-left: -7%;
+  margin-top: 13%;
+}
+.trendings .MuiGrid-grid-sm-4 .MuiToolbar-gutters{
+ margin-top:0px; 
+}
+#header .MuiListItemIcon-root {
+  color: #ffffff;
+}
+.copy-right{
+  float: right;
+  margin-top:-10px;
+}
+.footer .MuiGrid-grid-sm-6 {
+  margin-top: -15px !important;
+}
+.trendings .MuiGrid-grid-xs-4{
+  margin-top:2%;
+  margin-bottom: 2%;
+}
+.social-icons{
+  margin-top: -6%;
+}
+.MuiToolbar-regular{
+  margin: 0px 35px;
+}
+.social-icons .MuiSvgIcon-root{
+  margin-left: 10px;
+}
+.footer {
+  width: 100%;
+    float: left;
+    position: relative;
+    top: 50px;
+    margin-top: 20px;
+    background: #ffffff;
+}
+.footer a {
+  margin-right: 6%;
+  color: #484848;
+}
+
+#trend-content .MuiContainer-maxWidthLg{
+margin-bottom: 2%;
+}
+.trendings .nature .MuiButton-label{
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 1px 5px;
+}
+#left-image{
+  height: 298px;
+}
+#left-image h3 {
+  font-size: 34px;
+  margin: 0px;
+    text-align: left;
+    color: #3c3e46;
+}
+.trendings {
+  width: 100%;
+  position: relative;
+  float: left;
+  top: 64px;
+  background: #eeeef2;
+  min-height: 250px;
+}
+.sub-header{
+  background: #ffffff;
+    width: 100%;
+    float: left;
+    position: relative;
+    top: 64px;
+    padding: 10px 0px;
+}
+.sub-header .MuiTypography-colorPrimary {
+  margin: 0px;
+  color: #000000;
+  padding: 18px 20px;
+  line-height: 35px;
+  font-weight: 500;
+}
+.sub-header .MuiButton-contained{
+  float: right;
+  color: #6648cd;
+}
+.sub-header .MuiLink-underlineHover:hover{
+  text-decoration: none;
+    color: #6648cd;
+    border-bottom: 3px solid #6648cd;
+}
+.sub-header .MuiTypography-colorPrimary:first-child{
+  color: #6648cd;
+  border-bottom: 3px solid #6648cd;
+}
+.sub-header .MuiLink-underlineHover:nth-child(1){
+  color: #6648cd;
+  border-bottom: 3px solid #6648cd;
+}
+.MuiAppBar-colorPrimary{
+  background-color: #6648cd !important;
+}
+.MuiListItem-button{
+  width:auto !important;
+  float:left !important;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
