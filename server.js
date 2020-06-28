@@ -2,9 +2,9 @@ var express = require('express');
 var app = express();
 var cors = require('cors');
 app.use(cors())
-var data = [{image:'',title:'Arctic sea ice extent hits record low for winter maximum'},
-{image:'',title:'Now battery for smartphones can now charge in a minute'},
-{image:'',title:'The best Tropical plants you can grow indoors'}]
+var data = [{image:'./nature.jpg',title:'Arctic sea ice extent hits record low for winter maximum',icontitle:'CNN'},
+{image:'./pen.jpg',title:'Now battery for smartphones can now charge in a minute',icontitle:'Return'},
+{image:'./phone.jpg',title:'The best Tropical plants you can grow indoors',icontitle:'CNN'}]
 app.get('/info', function (req, res) {
    res.send(data);
 })

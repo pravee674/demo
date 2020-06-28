@@ -39,10 +39,17 @@
   color: #6648cd;
   font-weight: bold;
 }
-.return  .MuiListItemIcon-root {
+.return1  .MuiListItemIcon-root {
+  color: #6648cd;
+}
+.return1 .MuiTypography-displayBlock {
+  color: #6648cd;
+  font-weight: bold;
+}
+.return0  .MuiListItemIcon-root, .return2 .MuiListItemIcon-root {
   color: red;
 }
-.return .MuiTypography-displayBlock {
+.return0 .MuiTypography-displayBlock, .return2 .MuiTypography-displayBlock {
   color: red;
   font-weight: bold;
 }

@@ -11,13 +11,9 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Button from '@material-ui/core/Button';
 import Nature from './nature.jpg';
-import Pen from './pen.jpg';
-import Phone from './phone.jpg';
-import Leaf from './leaf.jpg';
 import EventIcon from '@material-ui/icons/Event';
 import SmokingRoomsIcon from '@material-ui/icons/SmokingRooms';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -32,26 +28,22 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Trending() {
-    const [count, setCount] = useState([]);
+    const [data, setData] = useState([]);
     const classes = useStyles();
 
+    const fetchUser = async() => {
+       const apiCall = await fetch('http://localhost:8081/info');
+        const info = await apiCall.json();
+        console.log(info);
+        setData(info);
+    }
+
     useEffect(() => {
-        axios.get('http://localhost:8081/info')
-  .then(function (response) {
-    // handle success
-    console.log(response);
-    setCount(response.data);
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .finally(function () {
-    // always executed
-  },[0]);
-      });
+        fetchUser();
+      },[0]);
 
     return (
+        
         <div className="trendings">
             <div className={classes.root} id="trend-content">
                 <Container maxWidth="lg">
@@ -91,15 +83,14 @@ export default function Trending() {
                 </Container>
                 <Container maxWidth="lg">
                     <Grid container spacing={2}>
-                    <Grid item xs={4} sm={4}>
+                        {data.length > 0 && data.map((item,key) => 
+                    <Grid item xs={4} sm={4} key={key}>
                             <Paper className={classes.paper} id="left-image">
-                            <img src={Pen} alt="Nature" />
-                            <h3>Arctic sea ice extent hits</h3>
-                                <h3>record low for winter</h3>
-                                <h3>maximum</h3>
+                            <img src={require(`${item.image}`)} alt="Nature" />
+                          <h3>{item.title}</h3>
                                 <Toolbar>
                                     <List component="nav" className={classes.root} aria-label="contacts">
-                                        <ListItem button className="return">
+                                        <ListItem button className={`return${key}`}>
                                             <ListItemIcon>
                                                 <SmokingRoomsIcon />
                                             </ListItemIcon>
@@ -114,7 +105,8 @@ export default function Trending() {
                                 </Toolbar>
                             </Paper>
                         </Grid>
-                        <Grid item xs={4} sm={4}>
+                        )}
+                        {/* <Grid item xs={4} sm={4}>
                             <Paper className={classes.paper} id="left-image">
                             <img src={Phone} alt="Nature" />
                             <h3>Now battery for smartphones</h3>
@@ -157,7 +149,7 @@ export default function Trending() {
                                     </ListItem>
                                 </Toolbar>
                             </Paper>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                 </Container>
             </div>
