@@ -28,6 +28,16 @@
   .sub-header{
     margin-top: -17%;
   }
+  .MuiButton-textSizeSmall{
+    padding: 0px 0px !important;
+    font-size: 10px !important;
+  }
+  .trendings .MuiGrid-grid-xs-4 #left-image {
+    height: 227px !important;
+  }
+  .trendings .MuiGrid-grid-xs-4 .MuiListItem-button{
+
+  }
   .trendings .MuiGrid-grid-sm-4 img {
     width: 67px !important;
     height: 50px !important;
@@ -173,7 +183,14 @@ margin-bottom: 2%;
   float: right;
   color: #6648cd;
 }
-.sub-header .MuiLink-underlineHover:hover{
+.MuiTypography-body1 a{
+  font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    padding: 20px 8px;
+    line-height: 30px;
+}
+.sub-header .MuiTypography-body1 a:hover{
   text-decoration: none;
     color: #6648cd;
     border-bottom: 3px solid #6648cd;

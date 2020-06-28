@@ -16,9 +16,12 @@ import FiberSmartRecordIcon from '@material-ui/icons/FiberSmartRecord';
 import WidgetsIcon from '@material-ui/icons/Widgets';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
+import {
+    Link
+  } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -48,7 +51,7 @@ export default function Header() {
             <AppBar position="fixed">
                 <Grid item xs={12} sm={12}>
                     <Toolbar>
-                    <Link href="/trending">
+                    <Link to="trending">
                         <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                             <ApartmentIcon />
                         </IconButton>
@@ -95,7 +98,7 @@ export default function Header() {
             <Container maxWidth="lg">
             <Grid item xs={12} sm={12}>
             <Typography className={classes.subHeader}>
-                <Link href="/trending">
+                <Link to="trending">
                     Trending
                 </Link>
                 <Link href="#" onClick={preventDefault}>

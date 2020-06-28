@@ -14,7 +14,9 @@ import Nature from './nature.jpg';
 import EventIcon from '@material-ui/icons/Event';
 import SmokingRoomsIcon from '@material-ui/icons/SmokingRooms';
 import { useState, useEffect } from 'react';
-import Link from '@material-ui/core/Link';
+import {
+    Link
+  } from "react-router-dom";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -51,7 +53,7 @@ export default function Trending() {
         <div className="trendings">
             <div className={classes.root} id="trend-content">
                 <Container maxWidth="lg">
-                <Link href="/channel">
+                <Link to="channel">
                     <Grid container>
                         <Grid item xs={6} sm={6}>
                             <img src={Nature} alt="Nature" />
