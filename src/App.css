@@ -22,6 +22,9 @@
     float: right;
 }
 }
+a {
+	text-decoration:none;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -29,11 +32,14 @@
   }
 }
 
-@media screen  and (min-width: 360px) and (max-width: 640px){
+@media screen  and (min-width: 300px) and (max-width: 640px){
   .sub-header .MuiTypography-colorPrimary{
     padding: 0px 0px !important;
     width: 100%;
     float: left;
+  }
+  .makeStyles-paper-11 .MuiListItem-button .MuiButton-textSizeSmall{
+	      margin-top: -63%;
   }
  
   .sub-header{
@@ -63,7 +69,7 @@
     font-size:20px !important;
   }
   .trendings img {
-    width: auto !important;
+    width: 322px !important;
     height: auto
   }
 }
