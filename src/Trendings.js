@@ -79,7 +79,7 @@ export default function Trending() {
                                         </ListItem>
                                     </List>
                                     <ListItem button>
-                                        <Button size="small" className="nature">
+                                        <Button size="small" className="nature actions">
                                             Nature
                                         </Button>
                                     </ListItem>

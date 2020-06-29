@@ -38,8 +38,8 @@ a {
     width: 100%;
     float: left;
   }
-  .makeStyles-paper-11 .MuiListItem-button .MuiButton-textSizeSmall{
-	      margin-top: -63%;
+  .actions{
+	   margin-top: -63% !important;
   }
  
   .sub-header{
