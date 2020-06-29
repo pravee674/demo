@@ -9,6 +9,9 @@
 .MuiIconButton-label{
   color: #ffffff;
 }
+.MuiListItemIcon-root {
+	color:#ffffff !important;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
