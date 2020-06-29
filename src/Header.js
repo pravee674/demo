@@ -18,6 +18,10 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
 import {
     Link
   } from "react-router-dom";
@@ -175,7 +179,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
            <Link to="trending">
                         <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
@@ -210,17 +214,7 @@ export default function PrimarySearchAppBar() {
                             </ListItem>
                         </List>
           </div>
-          <div className={classes.sectionMobile}>
-            <IconButton
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon />
-            </IconButton>
-          </div>
+         
 		  <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
@@ -232,8 +226,57 @@ export default function PrimarySearchAppBar() {
                         </ListItem>
             </div>
           </div>
+		   <div className={classes.sectionMobile}>
+            <IconButton
+              aria-label="show more"
+              aria-controls={mobileMenuId}
+              aria-haspopup="true"
+              onClick={handleMobileMenuOpen}
+              color="inherit"
+            >
+              <MoreIcon />
+            </IconButton>
+          </div>
         </Toolbar>
       </AppBar>
+	  <div className="sub-header">
+            <Container maxWidth="lg">
+            <Grid item xs={0} sm={12}>
+            <Typography className={classes.subHeader}>
+                <Link to="trending">
+                    Trending
+                </Link>
+                <Link href="#">
+                    For You
+                </Link>
+                <Link href="#">
+                    Cooking
+                </Link>
+                <Link href="#">
+                    Nature
+                </Link>
+                <Link href="#">
+                    Science
+                </Link>
+                <Link href="#">
+                    Travel
+                </Link>
+                <Link href="#">
+                    Climate
+                </Link>
+                <Link href="#">
+                    Music
+                </Link>
+                <Link href="#">
+                    People
+                </Link>
+                <Link href="/channel">
+                <Button variant="contained">Explore</Button>
+                </Link>
+            </Typography>
+            </Grid>
+            </Container>
+            </div>
       {renderMobileMenu}
       {renderMenu}
     </div>

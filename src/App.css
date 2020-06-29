@@ -6,11 +6,21 @@
   height: 40vmin;
   pointer-events: none;
 }
-.MuiIconButton-label{
+.makeStyles-grow-1 .MuiIconButton-label{
   color: #ffffff;
 }
-.MuiListItemIcon-root {
+.makeStyles-grow-1 .MuiListItemIcon-root {
 	color:#ffffff !important;
+}
+
+@media (min-width: 640px){
+.makeStyles-search-4{
+	margin-left: 33% !important;
+}
+.makeStyles-searchIcon-5 {
+		    width: 192px;
+    float: right;
+}
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -25,11 +35,15 @@
     width: 100%;
     float: left;
   }
-  .MuiAppBar-positionFixed{
-    position: relative !important;
-  }
+ 
   .sub-header{
-    margin-top: -17%;
+	display: none;
+  }
+  .makeStyles-searchIcon-5 .MuiTypography-displayBlock{
+	      font-size: 14px;
+  }
+  .MuiToolbar-regular{
+	  margin:0px !important;
   }
   .MuiButton-textSizeSmall{
     padding: 0px 0px !important;

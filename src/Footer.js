@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="footer">
             <div className={classes.root} id="trend-content">
                 <Container maxWidth="lg">
-                    <Grid container>
+                    <Grid container spacing={1}>
                         <Grid item xs={6} sm={6}>
                         <Typography className={classes.subHeader}>
                 <Link href="#" onClick={preventDefault}>
