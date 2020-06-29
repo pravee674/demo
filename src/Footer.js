@@ -26,8 +26,8 @@ export default function Footer() {
         <div className="footer">
             <div className={classes.root} id="trend-content">
                 <Container maxWidth="lg">
-                    <Grid container spacing={1}>
-                        <Grid item xs={6} sm={6}>
+                    <Grid container>
+                        <Grid item xs={0} sm={6}>
                         <Typography className={classes.subHeader}>
                 <Link href="#" onClick={preventDefault}>
                     About
@@ -43,14 +43,14 @@ export default function Footer() {
                 </Link>
                 </Typography>
                 </Grid>
-                    <Grid item xs={3} sm={3}>
+                    <Grid item xs={0} sm={3}>
                         <div className="social-icons">
                     <FacebookIcon />
                     <TwitterIcon />
                     <InstagramIcon />
                     </div>
                     </Grid>
-                <Grid item xs={3} sm={3}>
+                <Grid item xs={0} sm={3}>
                 <span className="copy-right">@2019 All rights reserved</span>
                         </Grid>
                     </Grid>

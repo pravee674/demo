@@ -41,6 +41,26 @@ a {
   .actions{
 	   margin-top: -63% !important;
   }
+  .footer a{
+	  margin:0px !important;
+  }
+  .MuiTypography-body1 a{
+	      padding: 0px 12px 0px 0px !important;
+		  line-height:20px !important;
+  }
+  .social-icons{
+	  margin:5px 0px 0px 0px  !important;
+  }
+  .social-icons .MuiSvgIcon-root {
+	  margin:0px !important;
+  }
+  .copy-right{
+    margin-top: 5px !important;
+    margin-left: 25px !important;
+  }
+  .footer{
+	padding: 10px 0px;
+  }
  
   .sub-header{
 	display: none;
