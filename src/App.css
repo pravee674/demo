@@ -32,7 +32,7 @@ a {
   }
 }
 
-@media screen  and (min-width: 300px) and (max-width: 640px){
+@media screen  and (min-width: 300px) and (max-width: 1024px){
   .sub-header .MuiTypography-colorPrimary{
     padding: 0px 0px !important;
     width: 100%;
@@ -89,8 +89,9 @@ a {
     font-size:20px !important;
   }
   .trendings img {
-    width: 322px !important;
-    height: auto
+    width: auto !important;
+    height: auto;
+	max-width:100%;
   }
 }
 
