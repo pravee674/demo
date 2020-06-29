@@ -55,10 +55,10 @@ export default function Trending() {
                 <Container maxWidth="lg">
                 <Link to="channel">
                     <Grid container>
-                        <Grid item xs={6} sm={6}>
+                        <Grid item xs={0} sm={6}>
                             <img src={Nature} alt="Nature" />
                         </Grid>
-                        <Grid item xs={6} sm={6}>
+                        <Grid item xs={0} sm={6}>
                             <Paper className={classes.paper} id="left-image">
                                 <h3>Fresh Wave of climate</h3>
                                 <h3>strikes takes place</h3>
@@ -92,7 +92,7 @@ export default function Trending() {
                 <Container maxWidth="lg">
                     <Grid container spacing={2}>
                         {data.length > 0 && data.map((item,key) => 
-                    <Grid item xs={4} sm={4} key={key}>
+                    <Grid item xs={0} sm={4} key={key}>
                             <Paper className={classes.paper} id="left-image">
                             <img src={require(`${item.image}`)} alt="Nature" />
                           <h3>{item.title}</h3>

@@ -39,16 +39,15 @@
 
   }
   .trendings .MuiGrid-grid-sm-4 img {
-    width: 67px !important;
-    height: 50px !important;
+    width: auto !important;
     margin-bottom: 10px !important;
   }
   #left-image h3{
-    font-size:12px !important;
+    font-size:20px !important;
   }
   .trendings img {
-    width: 150px !important;
-    height: 330px;
+    width: auto !important;
+    height: auto
   }
 }
 
